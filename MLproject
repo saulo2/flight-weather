@@ -1,7 +1,7 @@
 name: flight_weather
 
 docker_env:
-  image: "flight_weather-base:0.0.1-SNAPSHOT"
+  image: "pam-spark:0.0.1-SNAPSHOT"
 
 entry_points:
   main:
