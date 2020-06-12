@@ -1,8 +1,8 @@
-name: flight_weather
+name: flight-weather
 
 docker_env:
-  image: "flight_weather-base:0.0.1-SNAPSHOT"
+  image:  flight-weather-base:0.0.1-SNAPSHOT
 
 entry_points:
   main:
-    command: "python flight_weather.py"
+    command: "python flight-weather.py"

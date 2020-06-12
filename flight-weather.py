@@ -6,7 +6,7 @@
 
 from pyspark import SparkConf
 
-conf = SparkConf()     .setAppName("flight_weather10")     .set("spark.jars.repositories", "https://mmlspark.azureedge.net/maven")     .set("spark.jars.packages", "com.microsoft.ml.spark:mmlspark_2.11:1.0.0-rc1")
+conf = SparkConf()     .setAppName("flight-weather")     .set("spark.jars.repositories", "https://mmlspark.azureedge.net/maven")     .set("spark.jars.packages", "com.microsoft.ml.spark:mmlspark_2.11:1.0.0-rc1")
 
 
 # In[2]:
@@ -41,7 +41,7 @@ df = (sqlContext.read.format("csv").
   option("header", "true").
   option("nullValue", "NA").
   option("inferSchema", True).
-  load("/data/flight_weather.csv"))
+  load("flight-weather.csv"))
 
 
 # In[5]:
