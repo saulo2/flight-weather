@@ -41,7 +41,7 @@ df = (sqlContext.read.format("csv").
   option("header", "true").
   option("nullValue", "NA").
   option("inferSchema", True).
-  load("flight-weather.csv"))
+  load("/data/flight-weather.csv"))
 
 
 # In[5]:
